@@ -1,0 +1,31 @@
+        Scanner s = new Scanner(System.in);
+        Random r = new Random();
+
+        /*
+
+        for (int row = 0; row < 3; row++) {
+            for (int column = 0; column < 5; column++) {
+                System.out.print(column);
+                System.out.print(" ");
+         */
+
+        for (int row  = 0; row < 3 ; row++) {
+            for (int colomn = 0; colomn < 10; colomn++) {
+               int r1 = r.nextInt(99);
+                System.out.print(r1);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        int count = 1;
+        int numberofclumns = s.nextInt();
+        int num_of_rows = s.nextInt();
+        for (int row2 = 0; row2 < num_of_rows; row2++){
+
+            for ( int columns = 0; columns < numberofclumns; columns++ ) {
+                System.out.print(count);
+                System.out.print(" ");
+                count++;
+            }
+            System.out.println();
+            }
